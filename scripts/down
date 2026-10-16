@@ -1,0 +1,4 @@
+#!/bin/bash
+# Скрипт вызывается из любого каталога: пути считаются от корня проекта.
+cd "$(dirname "$0")/.."
+docker compose -f docker/docker-compose.yml down

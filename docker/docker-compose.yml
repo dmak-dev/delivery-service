@@ -1,0 +1,19 @@
+services:
+
+  delivery_app:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    container_name: delivery_app
+    volumes:
+      - ../src:/app/src:z,ro
+    networks:
+      - localhost
+    ports:
+      - "9020:9020"
+    restart: on-failure
+    command: gunicorn --pythonpath '/app/src' --bind 0:9020 app.main:app --reload -w 1
+
+networks:
+  localhost:
+    external: true

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Скрипт вызывается из любого каталога: пути считаются от корня проекта.
+cd "$(dirname "$0")/.."
+docker network create localhost || true
+docker compose -f docker/docker-compose.yml up --build --force-recreate -d

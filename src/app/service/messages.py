@@ -1,0 +1,5 @@
+MSG_UNSUPPORTED_DELIVERY = 'Неподдерживаемый перевозчик. Укажите: CDEK, Boxberry, Почта России, Amazon Delivery, Canada Post, DHL Post.'
+MSG_DADATA_UNAVAILABLE = 'Сервис распознавания адресов недоступен. Проверьте ключи и соединение.'
+MSG_ADDRESS_NOT_RECOGNIZED = 'Адрес не распознан. Уточните улицу, дом и населённый пункт.'
+MSG_BODY_MUST_BE_OBJECT = 'Тело запроса должно быть объектом JSON.'
+MSG_INTERNAL_ERROR = 'Внутренняя ошибка сервиса.'
